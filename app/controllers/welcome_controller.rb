@@ -3,6 +3,7 @@ class WelcomeController < ApplicationController
   end
 
   def lorem
+    @type = params["type"]
     @text = case params["type"].downcase
     when "khaled"
       "Lorem Khaled Ipsum is a major key to success. Surround yourself with angels, positive energy, beautiful people, beautiful souls, clean heart, angel. You do know, you do know that they don’t want you to have lunch. I’m keeping it real with you, so what you going do is have lunch. Cloth talk. A major key, never panic. Don’t panic, when it gets crazy and rough, don’t panic, stay calm. Every chance I get, I water the plants, Lion! The first of the month is coming, we have to get money, we have no choice. It cost money to eat and they don’t want you to eat.
