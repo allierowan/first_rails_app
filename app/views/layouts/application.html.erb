@@ -15,19 +15,25 @@
 
   <body>
     <div class="container-fluid">
-      <aside class="col-md-3">
+      <header class="jumbotron">
+        <h1>ALLIE ROWAN MADE THIS PAGE</h1>
+        <p>
+          How awesome is it?
+        </p>
+      </header>
+      <aside class="col-md-4">
         <form action="/lorem" method="get">
           <label for="lorem-type">Lorem Type</label>
           <input id="lorem-type" type="text" name="type">
-          <input type="submit" value="go!">
+          <input type="submit" class="btn btn-success btn-sm" value="go!">
         </form>
         <form action="/greet" method="get">
           <label for="lorem-type">Who should I greet?</label>
           <input id="lorem-type" type="text" name="name">
-          <input type="submit" value="Greet me!">
+          <input type="submit" class="btn btn-success btn-sm" value="Greet me!">
         </form>
       </aside>
-      <article class="col-md-9">
+      <article class="col-md-8">
         <%= yield %>
       </article>
     </div>
